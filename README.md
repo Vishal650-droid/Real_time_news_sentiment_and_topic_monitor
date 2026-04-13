@@ -79,3 +79,27 @@ python scripts/run_pipeline.py
 - **Word Clouds** – by Positive, Neutral, Negative
 - **Filterable Table** – download as CSV
 
+## 📸 Demo
+
+### Dashboard Overview
+![Dashboard](images/dashboard.png)
+
+### Topic Explorer
+![Topics](images/topics.png)
+
+### Sentiment Analysis
+![Sentiment](images/sentiment.png)
+
+
+## 🚀 How to Run
+
+```bash
+git clone <your-repo-url>
+cd Real_time_news_sentiment_and_topic_monitor
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+PYTHONPATH=. streamlit run src/app.py
