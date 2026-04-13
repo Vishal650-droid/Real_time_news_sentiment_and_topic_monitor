@@ -9,32 +9,27 @@ A beginner-friendly Machine Learning project that:
 
 
 ## 📁 Project Structure
-
-```
 Real_time_news_sentiment_and_topic_monitor/
 │
-├── app.py                  ← Streamlit dashboard (run this!)
-├── requirements.txt        ← Python package list
-├── README.md               ← This file
+├── requirements.txt        ← Python dependencies
+├── README.md               ← Project documentation
 │
-├── src/                    ← Core ML code
+├── src/                    ← Core ML + App code
+│   ├── app.py              ← Streamlit dashboard (run this!)
+│   ├── run_pipeline.py     ← Run full pipeline (no UI)
 │   ├── data_ingestion.py   ← Fetches news from RSS feeds
 │   ├── preprocessing.py    ← Cleans raw text
-│   ├── sentiment_model.py  ← VADER sentiment scoring
-│   ├── topic_model.py      ← LDA unsupervised topic clustering
-│   └── utils.py            ← Shared helper functions
-│
-├── scripts/
-│   └── run_pipeline.py     ← Run everything from terminal (no UI)
+│   ├── sentiment_model.py  ← VADER sentiment analysis
+│   ├── topic_model.py      ← LDA topic modeling
+│   └── utils.py            ← Helper functions
 │
 ├── data/
-│   ├── raw/                ← Downloaded articles (before cleaning)
-│   └── processed/          ← Cleaned & analysed articles (CSV)
+│   ├── raw/                ← Raw downloaded articles
+│   └── processed/          ← Cleaned & analyzed data
 │
-└── notebooks/              ← Jupyter notebooks for experiments
-```
-
----
+├── notebooks/              ← Jupyter notebooks (experiments)
+├── scripts/                ← (optional / unused)
+└── images/                 ← Screenshots for README
 
 ## 🧠 ML Concepts Used
 
