@@ -1,4 +1,10 @@
+import sys
+import os
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+import streamlit as st
+from src.data_ingestion import fetch_all_news
 import streamlit as st
 import pandas as pd
 import plotly.express as px

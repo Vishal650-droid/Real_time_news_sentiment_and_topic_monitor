@@ -31,7 +31,10 @@ def ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
-def save_json(data: list | dict, filepath: str) -> None:
+# def save_json(data: list | dict, filepath: str) -> None:
+from typing import Union
+
+def save_json(data: Union[list, dict], filepath: str) -> None:
     """
     Saves Python data (list or dict) as a nicely formatted JSON file.
     JSON = JavaScript Object Notation – a universal data format.
@@ -41,7 +44,10 @@ def save_json(data: list | dict, filepath: str) -> None:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def load_json(filepath: str) -> list | dict:
+# def load_json(filepath: str) -> list | dict:
+from typing import Union
+
+def load_json(filepath: str) -> Union[list, dict]:
     """Loads a JSON file and returns the Python object."""
     with open(filepath, "r", encoding="utf-8") as f:
         return json.load(f)
