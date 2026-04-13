@@ -9,6 +9,8 @@ A beginner-friendly Machine Learning project that:
 
 
 ## 📁 Project Structure
+
+```
 Real_time_news_sentiment_and_topic_monitor/
 │
 ├── requirements.txt        ← Python dependencies
@@ -30,6 +32,7 @@ Real_time_news_sentiment_and_topic_monitor/
 ├── notebooks/              ← Jupyter notebooks (experiments)
 ├── scripts/                ← (optional / unused)
 └── images/                 ← Screenshots for README
+```
 
 ## 🧠 ML Concepts Used
 
