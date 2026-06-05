@@ -88,6 +88,12 @@ python scripts/run_pipeline.py
 ### Sentiment Analysis
 ![Sentiment](images/sentiment.png)
 
+## Model Evaluation
+
+### Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
 
 ## 🚀 How to Run
 
