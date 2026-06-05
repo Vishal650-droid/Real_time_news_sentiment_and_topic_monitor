@@ -1,4 +1,4 @@
-# 📰 Real-Time News Sentiment & Topic Monitor
+#  Real-Time News Sentiment & Topic Monitor
 
 A beginner-friendly Machine Learning project that:
 - **Fetches live news** from BBC, Reuters, Al Jazeera, The Hindu & more
@@ -7,8 +7,15 @@ A beginner-friendly Machine Learning project that:
 - **Shows everything** in an interactive Streamlit dashboard
 
 
+##  Project Goal
 
-## 📁 Project Structure
+This project demonstrates an end-to-end NLP pipeline that:
+- Collects live news articles from RSS feeds
+- Cleans and preprocesses text data
+- Performs sentiment analysis using VADER
+- Discovers latent topics using LDA
+- Visualizes insights through an interactive Streamlit dashboard
+## Project Structure
 
 ```
 Real_time_news_sentiment_and_topic_monitor/
@@ -34,7 +41,7 @@ Real_time_news_sentiment_and_topic_monitor/
 └── images/                 ← Screenshots for README
 ```
 
-## 🧠 ML Concepts Used
+##  ML Concepts Used
 
 | Module | Concept | Type |
 |---|---|---|
@@ -45,7 +52,7 @@ Real_time_news_sentiment_and_topic_monitor/
 
 ---
 
-## 🧪 Test Individual Modules
+##  Test Individual Modules
 
 ```bash
 # Test data ingestion
@@ -77,7 +84,7 @@ python scripts/run_pipeline.py
 - **Word Clouds** – by Positive, Neutral, Negative
 - **Filterable Table** – download as CSV
 
-## 📸 Demo
+## Demo
 
 ### Dashboard Overview
 ![Dashboard](images/dashboard.png)
@@ -90,12 +97,34 @@ python scripts/run_pipeline.py
 
 ## Model Evaluation
 
+### Evaluation Dataset
+- Twitter Airline Sentiment Dataset
+- 14,640 labeled tweets
+
+### Results
+
+| Metric | Score |
+|----------|----------|
+| Accuracy | 48.99% |
+| Weighted F1 Score | 0.51 |
+
+### Classification Report
+
+| Class | Precision | Recall | F1 |
+|---------|---------|---------|---------|
+| Negative | 0.90 | 0.44 | 0.59 |
+| Neutral | 0.39 | 0.32 | 0.35 |
+| Positive | 0.28 | 0.91 | 0.43 |
+
 ### Confusion Matrix
 
 ![Confusion Matrix](images/confusion_matrix.png)
 
+### Key Insight
 
-## 🚀 How to Run
+VADER performs reasonably well for general sentiment analysis but struggles with domain-specific airline tweets. This evaluation highlights the limitations of rule-based sentiment analysis and motivates future work using supervised machine learning models.
+
+##  How to Run
 
 ```bash
 git clone <your-repo-url>
@@ -107,3 +136,4 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 PYTHONPATH=. streamlit run src/app.py
+```
